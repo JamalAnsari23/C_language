@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+double pow(double base,int expo);
+
+int main()
+{
+ double base,power;
+ int expo;
+ 
+ printf("Enter base\n");
+ scanf("%lf", &base);
+ printf("Enter expo\n");
+ scanf("%d",&expo);
+ 
+ power=pow(base,expo);
+    
+     printf("%.2lf ^ %d = %f", base, expo, power);
+    return 0;   	
+}
+double pow(double base, int expo)
+
+{
+    if(expo == 0)
+        return 1;
+    else if(expo > 0)
+        return base * pow(base, expo - 1);
+    
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main()
+{
+	int i=0;
+	while(i<30)
+	{
+		printf("%d\n", i+1);
+		i=i+1;
+	}
+}
